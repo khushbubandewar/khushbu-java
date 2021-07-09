@@ -1,0 +1,15 @@
+package com.test.tokenizer;
+
+import java.util.HashMap;
+
+public class HashMapDuplicateChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="this is a program of duplicate charcters ";
+		String[] strArr=str.split("");
+		HashMap<String,Integer> map = new HashMap<String,Integer>();
+		
+	}
+
+}

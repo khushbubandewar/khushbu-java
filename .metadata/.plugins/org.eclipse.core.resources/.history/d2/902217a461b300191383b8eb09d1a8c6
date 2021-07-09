@@ -1,0 +1,31 @@
+package com.Student.Employee.college;
+
+public class Employee {
+	private String name;
+	private String city;
+	private long  id;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", city=" + city + ", id=" + id + ", getName()=" + getName() + ", getCity()="
+				+ getCity() + ", getId()=" + getId() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+}

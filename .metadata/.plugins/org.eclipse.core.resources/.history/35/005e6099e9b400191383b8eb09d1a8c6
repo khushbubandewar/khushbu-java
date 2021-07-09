@@ -1,0 +1,83 @@
+package com.hostel.data;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.model.Block;
+import com.hostel.model.Building;
+import com.hostel.model.Floor;
+import com.hostel.model.Hostel;
+import com.hostel.model.Room;
+import com.hostel.model.Student;
+
+
+public class HostelData {
+ public static Map<String, Map<String,List<Block>>> hostelData;
+ static {
+	// TODO Auto-generated method stub
+	 
+	 		List<Block> blockArr = new ArrayList<Block>();
+			List<Building> buildingArr = new ArrayList<Building>();
+			List<Floor> floorArr = new ArrayList<Floor>();
+			List<Room> roomArr = new ArrayList<Room>();
+			List<Student> studentArr = new ArrayList<Student>();
+			
+			Hostel hostel1 = new Hostel();
+			hostel1.setName("GirlsHostel");
+			hostel1.setBlock(4);
+			hostel1.setAddress("Pune");
+			Hostel hostel2 = new Hostel();
+			hostel2.setName("BoysHostel");
+			hostel2.setBlock(4);
+			hostel2.setAddress("Pune");
+			
+			Block block1 = new Block();
+			block1.setName("Agni");
+			block1.setBuildings("A1");
+			Block block2 = new Block();
+			block2.setName("Agni");
+			block2.setBuildings("A1");
+			
+			Building building1 = new Building();
+			building1.setBuildingName("A1");
+			building1.setFloors(4);
+			building1.setNameOfFloor("");
+			Building building2 = new Building();
+			building2.setBuildingName("B1");
+			building2.setFloors(4);
+			building2.setNameOfFloor("");
+			
+			Floor floor1 = new Floor();
+			floor1.setFloorName("1st Floor");
+			floor1.setFloorRoom(5);
+			Floor floor2 = new Floor();
+			floor2.setFloorName("1st Floor");
+			floor2.setFloorRoom(5);
+			
+			Room room1 = new Room();
+			room1.setRoomno(101);
+			room1.setOccupiedStudent(5);
+			room1.setTotalOccupancy(7);
+			room1.setStudent(10);
+			Room room2 = new Room();
+			room2.setRoomno(102);
+			room2.setOccupiedStudent(4);
+			room2.setTotalOccupancy(7);
+			room2.setStudent(10);
+			
+			Student student1 = new Student();
+			student1.setName("Aaru");
+			student1.setRollNo(001);
+			
+			
+			Map<String,List<Block>> blockData = new HashMap<String,List<Block>>();
+			Map<String,List<Building>> buildingData = new HashMap<String,List<Building>>();
+			Map<String,List<Floor>> floorData = new HashMap<String,List<Floor>>();
+			Map<String,List<Room>> roomData = new HashMap<String,List<Room>>();
+			Map<String,List<Student>> studentData = new HashMap<String,List<Student>>();
+			Hostel hostel = new Hostel();
+			hostelData.put(hostel.getName(), blockData);
+ }
+}

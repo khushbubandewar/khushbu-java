@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class IteratorReverseExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList al = new ArrayList();
+		al.add('a');
+		al.add("aa");
+		al.add("bb");
+		al.add("cc");
+		al.add(13);
+		Iterator i = al.iterator();
+		while(i.hasNext()) {
+			System.out.print(i.next());
+		}
+	}
+
+}
+

@@ -1,0 +1,12 @@
+
+public class StringExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] s  = {"STRINGEXAMPLE"};
+			System.out.println(s);
+			
+			//System.out.println();
+	}
+
+}

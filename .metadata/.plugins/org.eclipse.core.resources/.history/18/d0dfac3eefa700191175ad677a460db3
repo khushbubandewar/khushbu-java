@@ -1,0 +1,20 @@
+import java.util.*;
+public class TeacherDOB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList AL = new ArrayList();
+		Teacher teacher = new Teacher();
+		teacher.setName("Khushbu");
+		Teacher T = new Teacher();
+		T.setFatherName("Rameshvar bandewar");
+		Teacher S = new Teacher();
+		S.setID(234567);
+		Teacher A = new Teacher();
+		A.setAddress("Mohkhed");
+		Teacher E = new Teacher();
+		E.setAge(20);
+		
+	}
+
+}

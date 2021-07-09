@@ -1,0 +1,32 @@
+import java.util.LinkedList;
+
+public class EmpolyeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Employee> L = new LinkedList<Employee>();
+		
+		Employee employee = new Employee();
+		employee.setName("Anil");
+		employee.setDepartment("CS");
+		employee.setID(12345);
+		employee.setAddress("Banglore");
+		employee.setPhoneNo(987876899);
+		
+		Employee employee1 = new Employee();
+		employee1.setName("Gudiya");
+		employee1.setDepartment("EC");
+		employee1.setID(67890);
+		employee1.setAddress("Nagpur");
+		employee1.setPhoneNo(87654321);
+		
+		L.add(employee);
+		L.add(employee1);
+		
+		
+		for(Employee emp : L) {
+			System.out.println("Employee Data" +L);
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.lang.*;
+public class StringBuffer {
+
+	public StringBuffer(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+	StringBuffer sb = new StringBuffer("Durga");	
+	sb.insert(3,"sdgj");
+	System.out.println(sb);
+	
+	}
+
+	private void insert(int i, String string) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+public class ConvertString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = new String();
+		str=" This is an Example of String ";
+		StringBuffer sb = new  StringBuffer();
+		sb = 
+	}
+
+}

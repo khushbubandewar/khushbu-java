@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class StringBufferExa1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		StringBuffer str = new StringBuffer();
+		String[] str1 = { "The program of StringBufferExa1"};
+		ArrayList al = new ArrayList();
+		
+		
+		for(String st : str1) {
+			System.out.println(st);
+		}
+		int size =  al.size();
+		for(int i=0;i<size;i++) {
+			System.out.println("Print  :  "+al.get(i));
+		}
+	}
+
+}

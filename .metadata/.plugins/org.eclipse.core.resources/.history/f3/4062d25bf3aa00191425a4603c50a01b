@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class StringEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] str = { "The program of StringEx1 "};
+		ArrayList al = new ArrayList();
+		for(String obj : str) {
+			System.out.println(obj);
+		}
+		
+	}
+
+}

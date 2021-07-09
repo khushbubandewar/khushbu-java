@@ -1,0 +1,13 @@
+
+public class EqualsExTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EqualsEx E1 = new EqualsEx(111,"khushbu");
+		EqualsEx E2 = new EqualsEx(222,"Muskan");
+		EqualsEx E3 = new EqualsEx(333,"Xxxx");
+		EqualsEx E4 = new EqualsEx(444,"Yyyy");
+		
+	}
+
+}

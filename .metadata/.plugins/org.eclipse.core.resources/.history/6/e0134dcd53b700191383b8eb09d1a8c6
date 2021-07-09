@@ -1,0 +1,23 @@
+package com.Student.Employee.college;
+
+public class TestStackTrace {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		do Stuff();
+	}
+		private static void Stuff() {
+		// TODO Auto-generated method stub
+		
+	}
+		public void do TestStackTrace() {
+			do MoreStuff();
+		}
+		private void MoreStuff() {
+			// TODO Auto-generated method stub
+			
+		}
+		public static void do MoreStuff();
+		}
+
+}

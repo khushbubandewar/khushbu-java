@@ -1,0 +1,59 @@
+import java.util.TreeSet;
+
+public class CollegeExTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<College> t = new TreeSet<College>();
+		TreeSet<College> t1 = new TreeSet<College>();
+		TreeSet<College> t2 = new TreeSet<College>();
+		TreeSet<College> t3 = new TreeSet<College>();
+		
+		College c =new College();
+		c.setBranch("CSE");
+		c.setCode(040);
+		c.setFaculty("abc");
+		c.setSalary(987);
+		
+		College c1 =new College();
+		c.setBranch("IT");
+		c.setCode(540);
+		c.setFaculty("ghf");
+		c.setSalary(5627);
+		
+		College c2 =new College();
+		c.setBranch("CIVIL");
+		c.setCode(194);
+		c.setFaculty("jho");
+		c.setSalary(1000);
+		
+		College c3 =new College();
+		c.setBranch("EC");
+		c.setCode(023);
+		c.setFaculty("vbny");
+		c.setSalary(500);
+		
+		t.add(c);
+		t.add(c1);
+		t.add(c2);
+		t.add(c3);		
+		t1.add(c);
+		t1.add(c1);
+		t1.add(c2);
+		t1.add(c3);		
+		t2.add(c);
+		t2.add(c1);
+		t2.add(c2);
+		t2.add(c3);		
+		t3.add(c);
+		t3.add(c1);
+		t3.add(c2);
+		t3.add(c3);
+		
+		System.out.print(t);
+		System.out.print(t1);
+		System.out.print(t2);
+		System.out.print(t3);
+	}
+
+}

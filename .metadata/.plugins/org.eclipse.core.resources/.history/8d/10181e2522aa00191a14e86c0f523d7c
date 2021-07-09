@@ -1,0 +1,31 @@
+import java.lang.*;
+public class StringBuffer {
+	private String i;
+
+	public String toString() {
+		return i+"";
+	}
+	public StringBuffer(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+	StringBuffer sb = new StringBuffer("Durga");	
+//	sb.insert(3,"sdgj");
+//	System.out.println(sb);
+	
+	
+	
+	
+	
+	}
+
+	private StringBuffer append(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	private void insert(int i, String string) {
+		// TODO Auto-generated method stub
+		
+	}
+}

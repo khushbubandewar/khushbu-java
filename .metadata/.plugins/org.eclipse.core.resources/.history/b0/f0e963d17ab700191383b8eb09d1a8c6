@@ -1,0 +1,10 @@
+package com.Student.Employee.college;
+
+public class TestDemoCostomizeException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

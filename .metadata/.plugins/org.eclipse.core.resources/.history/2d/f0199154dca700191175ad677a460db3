@@ -1,0 +1,13 @@
+import java.io.Serializable;
+
+public class Teacher implements Serializable {
+
+	private String tName;
+	private String tFatherName;
+	private String tAddress;
+	private int RollNo;
+	private int age;
+	
+	
+
+}

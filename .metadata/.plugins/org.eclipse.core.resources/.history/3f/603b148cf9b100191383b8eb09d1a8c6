@@ -1,0 +1,22 @@
+package com.test.tokenizer;
+
+import java.util.Comparator;
+
+public class HashSetComparator  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     char a= 'a';
+     System.out.println(a);
+	}
+
+	
+
+}
+ class StNameComparator implements Comparator<Student>{
+	 @Override
+		public int compare(Student std1, Student std2) {
+			return std1.getName().compareTo(std2.getName());
+			//if()
+		}
+ }

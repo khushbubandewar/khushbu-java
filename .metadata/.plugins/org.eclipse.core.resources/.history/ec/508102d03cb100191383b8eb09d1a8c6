@@ -1,0 +1,43 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class IteratorExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,String> hm = new HashMap<String,String>();
+		hm.put("1", "a");
+		hm.put("3", "a");
+		hm.put("abc","sfsdsfsdf");
+		
+		//1
+		System.out.println("====iterator=====");
+		Set<String> set = hm.keySet();
+		Iterator<String> itr = set.iterator();
+		while(itr.hasNext()) {
+			String key =  itr.next();
+			System.out.println("Key-"+key+" Value-"+hm.get(key));
+		}
+		//2
+		System.out.println("====Enhanced for loop=====");
+		for(String key : set) {
+			System.out.println("Key-"+key+" Value-"+hm.get(key));
+		}
+		
+		//3
+		System.out.println("====iterator=====");
+		Set<String> set1 = (Set<String>) hm.values();
+		Iterator<String> itr1 = set1.iterator();
+		while(itr1.hasNext()) {
+			String key =  itr1.next();
+			System.out.println("Key-"+key+" Value-"+hm.get(key));
+		}
+		//2
+		System.out.println("====Enhanced for loop=====");
+		for(String key : set1) {
+			System.out.println("Key-"+key+" Value-"+hm.get(key));
+		}
+	}
+
+}

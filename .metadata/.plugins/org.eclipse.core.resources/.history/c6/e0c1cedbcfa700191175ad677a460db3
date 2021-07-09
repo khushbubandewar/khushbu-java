@@ -1,0 +1,5 @@
+ class AbstractExample1 extends AbstractExample{
+	void run() {
+		System.out.println("Running safely");
+	}
+}

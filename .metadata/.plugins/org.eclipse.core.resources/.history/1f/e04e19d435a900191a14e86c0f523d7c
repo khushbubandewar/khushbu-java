@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LoopPyramidExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter length of Pyramid : ");
+		int length = sc.nextInt();
+		for(int i=1;i<=length;i++) {
+			for(int k=length-i;k>=1;k--) {
+				System.out.print(" ");	
+			}
+			for(int j=0; j<length-1;j++) {
+				
+				System.out.print("* ");
+
+				
+			}
+			System.out.println(" ");
+		}
+	}
+
+}

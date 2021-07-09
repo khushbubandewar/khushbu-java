@@ -1,0 +1,8 @@
+
+public class Hashcode {
+	int i;
+	Hashcode(int i){
+	this.i=i;		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class ImmutableMutable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String S = new String("khushbu");
+		S.concat("Software");
+		System.out.println(S);
+	}
+	StringBuffer S1 = new StringBuffer("khushbu");
+	S1.append("Software");
+	System.out.println(S1);
+}

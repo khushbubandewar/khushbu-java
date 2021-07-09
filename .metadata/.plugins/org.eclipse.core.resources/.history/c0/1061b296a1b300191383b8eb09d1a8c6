@@ -1,0 +1,35 @@
+package com.Student.Employee.college;
+
+import java.util.ArrayList;
+
+import com.test.tokenizer.Student;
+
+public class Student1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList al=new ArrayList();
+		Student st1=new Student();
+		st1.setName("Alfa");
+		st1.setAddress("bhopal");
+		st1.setRollNo("87698");
+		
+		Student st2=new Student();
+		st1.setName("Bita");
+		st1.setAddress("indor");
+		st1.setRollNo(323);
+		
+		Student st3=new Student();
+		st1.setName("Gama");
+		st1.setAddress("nagpur");
+		st1.setRollNo(8977);
+		
+		al.add(st1);
+//		al.add(st2);
+//		al.add(st3);
+		
+		
+		
+	}
+
+}

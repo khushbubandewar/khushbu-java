@@ -1,0 +1,17 @@
+import java.util.Comparator;
+
+public class CollegeExSalaryComparator  implements Comparator<College>{
+	public int campare(College obj1,College obj2) {
+		Long l1=obj1.getSalary();
+		Long l2=obj2.getSalary();
+		return -l1.compareTo(l2);
+	}
+
+	@Override
+	public int compare(College o1, College o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+}

@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package com.basic;
+
+/**
+ * @author Anil
+ *
+ */
+public class DataTypes {
+	byte byteVariable;
+	short shortVariable;
+	int intVariable;
+	long longVariable;
+	float floatVariable;
+	double doubleVariable;
+	char charVariable;
+	boolean booleanVariable;
+	
+	public DataTypes()
+	{
+		System.out.println("The default value of data types");
+		System.out.println("The default value of byte data types" +byteVariable);
+		System.out.println("The default value of short data types" +shortVariable);
+		System.out.println("The default value of int data types" +intVariable);
+		System.out.println("The default value of long data types" +longVariable);
+		System.out.println("The default value of float data types" +floatVariable);
+		System.out.println("The default value of double data types" +doubleVariable);
+		System.out.println("The default value of char data types" +charVariable);
+		System.out.println("The default value of boolean data types" +booleanVariable);
+		
+		System.out.println("------------------------------------------------------------");
+		
+		System.out.println("Minimum value of byte is" + Byte.MIN_VALUE + "Maximum value of byte is " + Byte.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + short.MIN_VALUE + "Maximum value of byte is " + short.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + int.MIN_VALUE + "Maximum value of byte is " + int.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + long.MIN_VALUE + "Maximum value of byte is " + long.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + float.MIN_VALUE + "Maximum value of byte is " + float.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + double.MIN_VALUE + "Maximum value of byte is " + double.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + char.MIN_VALUE + "Maximum value of byte is " + char.MAX_VALUE)
+		System.out.println("Minimum value of byte is" + boolean.MIN_VALUE + "Maximum value of byte is " + boolean.MAX_VALUE)
+		
+	}
+	/**
+	 * Information of data types
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new DataTypes();
+	}
+
+}

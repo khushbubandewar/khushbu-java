@@ -1,0 +1,8 @@
+
+public class CollegeEx {
+	private String branch;
+	private int code;
+	private String faculty;
+	private long salary;
+	
+}

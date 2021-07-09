@@ -1,0 +1,15 @@
+
+public class InterfaceExampleTest  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InterfaceExample1 obj = new InterfaceExample1();
+		obj.method();
+		obj.method1();
+		obj.method2();
+		obj.method3();
+		obj.method4();
+		obj.method5();
+	}
+
+}

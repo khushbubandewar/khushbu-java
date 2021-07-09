@@ -1,0 +1,50 @@
+import java.util.LinkedList;
+import java.util.TreeSet;
+
+import com.test.tokenizer.Student;
+
+public class StudentEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Student> t = new TreeSet<Student>(new StNameComparator());
+		TreeSet<Student> t1 = new TreeSet<Student>(new StAddressComparator());
+		TreeSet<Student> t3 = new TreeSet<Student>(new StRollNoComparator());
+		
+		Student s1=new Student();
+		s1.setAddress("nagpur");
+		s1.setName("bittu");
+		s1.setRollNo(58766989);
+		
+		Student s2=new Student();
+		s2.setAddress("indore");
+		s2.setName("khushbu");
+		s2.setRollNo(6758769);
+		
+		Student s3=new Student();
+		s3.setAddress("bhopal");
+		s3.setName("muskan");
+		s3.setRollNo(88658769);
+		
+		Student s4=new Student();
+		s4.setAddress("banglore");
+		s4.setName("ghfhgfhg");
+		s4.setRollNo(95870869);
+		
+		t.add(s1);
+		t.add(s2);
+		t.add(s3);
+		t.add(s4);
+		t1.add(s1);
+		t1.add(s2);
+		t1.add(s3);
+		t1.add(s4);
+		t2.add(s1);
+		t2.add(s2);
+		t2.add(s3);
+		t2.add(s4);
+System.out.println(t);
+System.out.println(t1);
+	}
+
+}

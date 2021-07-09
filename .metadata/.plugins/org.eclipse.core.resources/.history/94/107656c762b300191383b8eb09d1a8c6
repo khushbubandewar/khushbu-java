@@ -1,0 +1,65 @@
+package com.Student.Employee.college;
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import com.test.tokenizer.Student;
+
+import java.util.Set;
+
+public class HashMapTest {
+
+	private static final String[][] String = null;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Employee> employeeList = new LinkedList<Employee>();
+		Employee emp1 = new Employee();
+		emp1.setName("Alfa");
+		emp1.setCity("pune");
+		emp1.setId(12356);
+		employeeList.add(emp1);
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("employeeList", employeeList);
+		Set<Entry<String, Object>> set = map.entrySet();
+		// Iterator<Employee> itr = set.iterator();
+		// === Employee/Student/College Details==
+		//Employee Name = 
+		//Employee City = 
+		//Employee ID = 
+		for (Entry<String, Object> entry : set) {
+			System.out.println(entry.getKey() + " " + entry.getValue());
+			if(entry.getValue() instanceof  LinkedList) {
+				LinkedList<Employee> employeeData = (LinkedList<Employee>)entry.getValue();
+				for(Employee emp :employeeData) {
+					System.out.println("=== Employee Details==");
+					System.out.println("Employee Name "+emp.getName());
+					System.out.println("Employee  City "+emp.getCity());
+					System.out.println("Employee  ID "+emp.getId());
+				}
+			}
+		}
+		
+//				
+//		ArrayList<Student> StudentArrayList=new ArrayList<>();
+//		Student st1=new Student();
+//		st1.setName("Alfa");
+//		st1.setAddress("bhopal");
+//		st1.setRollNo(87698);
+//		StudentArrayList.add(st1);
+//		Map<String,Object> map1=new HashMap<String,Object>();
+//		map.put("StudentArrayList",StudentArrayList );
+//		Set<Entry<String,Object>>  set1 =map1.entrySet();
+//		for(Entry<String,Object> entry1:set1) {
+//			System.out.println(entry1.getKey()+" "+entry1.getValue());
+//			
+//		}
+		
+
+	}
+
+}

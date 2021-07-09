@@ -1,0 +1,13 @@
+
+public class StringEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str=" ";
+		char[] charArr= new char[]{'S','t','r','i','n','g'};
+		str=new String(charArr);
+		System.out.println("Print String  :  "+str);
+		System.out.println("String Length   :  "+str.length());
+	}
+
+}

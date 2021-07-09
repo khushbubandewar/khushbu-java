@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ConvertString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String str = new String();
+		str=" This is an Example of String ";
+		StringBuffer sb = new  StringBuffer();
+		sb = sb.append(str);
+		System.out.print(" Print StringBuffer  :  "+sb);
+		
+		StringBuilder SB  = new StringBuilder();
+		SB = SB.append(str);
+		System.out.println("Print StringBuilder : "+SB);
+	}
+
+}

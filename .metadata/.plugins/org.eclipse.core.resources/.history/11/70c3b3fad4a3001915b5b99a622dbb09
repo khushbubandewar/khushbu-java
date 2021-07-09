@@ -1,0 +1,19 @@
+
+public class ImmutableMutable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String S = new String("khushbu");
+		S.concat("Software");
+		System.out.println(S);
+	}
+
+{
+
+	String S1 = new String("XXXXX");
+	S1.append("Software");
+	System.out.println(S1);
+
+}
+
+}

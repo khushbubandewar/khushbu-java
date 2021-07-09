@@ -1,0 +1,31 @@
+
+public class ImmutableMutable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//String S = new String("khushbu");
+		//S.concat("Software");
+		//System.out.println(S);
+		//StringBuffer S1 = new StringBuffer("khushbu");
+		//S1.append("Software");
+		//System.out.println(S1);
+		
+		String S1 = new String("khushbu bandewar");
+		String S2 = new String("khushbu bandewar");
+		System.out.println(S1==S2); //true
+		
+		String S3 = "khushbu bandewar";
+		String S4 = "khushbu bandewar";
+			
+		System.out.println(S1==S4);
+		System.out.println(S1.equals(S4));
+		
+		System.out.println(S1==S3);
+		System.out.println(S1.equals(S3));
+		
+		String S5 = "khushbu"+"bandewar";
+		System.out.println(S3==S5);
+		
+	}
+	
+}

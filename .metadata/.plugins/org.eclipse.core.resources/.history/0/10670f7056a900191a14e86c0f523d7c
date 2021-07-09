@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Split {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str =  "This is a program of split example";
+		String[] strArr = str.split(" ");
+		//ArrayList al = new ArrayList();
+		//This:is:a:program:of:split:example
+		System.out.println(strArr);
+	}
+
+}

@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package com.basic;
+
+/**
+ * @author Anil
+ *
+ */
+public class DataTypes {
+	byte byteVariable;
+	short shortVariable;
+	int intVariable;
+	long longVariable;
+	float floatVariable;
+	double doubleVariable;
+	char charVariable;
+	boolean booleanVariable;
+	
+	public DataTypes()
+	{
+		System.out.println("The default value of data types");
+		Sysyem.out.println("The default value of byte data types" +byteVariable);
+		Sysyem.out.println("The default value of short data types" +shortVariable);
+		Sysyem.out.println("The default value of int data types" +intVariable);
+		Sysyem.out.println("The default value of long data types" +longVariable);
+		Sysyem.out.println("The default value of float data types" +floatVariable);
+		Sysyem.out.println("The default value of double data types" +doubleVariable);
+		Sysyem.out.println("The default value of char data types" +charVariable);
+		Sysyem.out.println("The default value of boolean data types" +booleanVariable);
+	
+	}
+	/**
+	 * Information of data types
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

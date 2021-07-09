@@ -1,0 +1,13 @@
+
+public class StringExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "My Name Is Khushbu";
+		char[]charArr = str.toCharArray();
+		char[]value = {'M','y',' ','N','a','m','e',' ','I','s',' ','K','h','u','s','h','b','u'};
+		str.length();
+		System.out.println(str.charAt(1));
+	}
+
+}

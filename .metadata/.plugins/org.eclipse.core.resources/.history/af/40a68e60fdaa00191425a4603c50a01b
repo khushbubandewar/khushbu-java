@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class StringEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		String str = new String();
+		
+		String str =  "The program of StringEx1 ";
+		ArrayList<String> al = new ArrayList<String>();
+		al.add(str);
+		
+		for(String obj : al) {
+			System.out.println(obj);
+		}
+		
+		int size=al.size();
+		for(int i=0;i<size;i++) {
+			System.out.println("Print  :  "+al.get(i));
+		}
+		
+	}
+
+}

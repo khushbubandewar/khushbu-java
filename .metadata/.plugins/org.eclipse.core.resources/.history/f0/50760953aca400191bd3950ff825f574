@@ -1,0 +1,6 @@
+
+public class StringMethod {
+	StringMethod("String");
+	String S = "Durga";
+	S = S.concate("Software");
+}

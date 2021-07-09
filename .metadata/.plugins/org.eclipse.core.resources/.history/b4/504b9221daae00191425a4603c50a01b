@@ -1,0 +1,25 @@
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="this is a program of string";
+		String[] strArr=str.split(" ");
+		for(int i=0;i<=strArr.length;i++) {
+			for(int j=0;j<=strArr.length;j++) {
+				if(strArr[i].equals(strArr[j])) {
+					 int count = 0;
+					count++;
+				}else{
+					continue;
+					
+					int count;
+					if(count>1  &&  strArr[i]) {
+						System.out.println([i]);
+					}
+				}
+			}
+		}
+	}
+
+}

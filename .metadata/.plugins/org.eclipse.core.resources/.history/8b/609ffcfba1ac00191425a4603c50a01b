@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class palindromeExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter Palindrome String : ");
+		String str=sc.next();
+		String[] strArr =str.split("");
+		boolean palindrome = true;
+		for(int i=0; i<str.length()/2;i++) {
+			if(!strArr[i].equals(strArr.length-i-1)){
+				 palindrome = false;
+						break;
+			}
+			
+		}
+		if(palindrome) {
+			System.out.println("String is  palindrom");
+		}else {
+			System.out.println("String is not palindrom");
+		}
+		
+				
+	}
+
+}

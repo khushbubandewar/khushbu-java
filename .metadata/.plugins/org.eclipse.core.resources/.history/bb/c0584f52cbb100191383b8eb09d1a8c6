@@ -1,0 +1,25 @@
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashTableIterator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashtable h =new Hashtable();
+		h.put("1", "one");
+		h.put("2", "two");
+		h.put("5", "five");
+		h.put("3", "three");
+		h.put("0", "zero");
+		Set<String> set =h.keySet();
+		Iterator<String> itr = set.iterator();
+		while(itr.hasNext()) {
+			 String key=itr.next();
+			 System.out.print(key+"  "+h.get(key));
+		}
+		
+		
+	}
+
+}

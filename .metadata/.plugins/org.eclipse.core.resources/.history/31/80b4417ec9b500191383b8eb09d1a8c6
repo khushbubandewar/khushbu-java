@@ -1,0 +1,43 @@
+package com.hostel.main;
+
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.data.HostelData;
+import com.hostel.model.Block;
+import com.hostel.model.Building;
+import com.hostel.model.Floor;
+import com.hostel.model.Room;
+import com.hostel.model.Student;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		
+		Map<String, List<Block>> hostelData = HostelData.hostelData;
+		//System.out.println(hostelData.get("GirlsHostel"));
+		List<Block> blockList = hostelData.get("XYZHostel");
+		if(blockList!=null) {
+			for(Block block : blockList) {
+				System.out.println("=======================    "+block.getName()+"    =======");
+				List<Building> buildingList = block.getBuilding();
+				for(Building building : buildingList) {
+					System.out.println("          **********    "+building.getBuildingName()+"    ***********");
+					List<Floor> floorList = building.getFloor();
+					for(Floor floor : floorList) {
+						System.out.println("          $$$$$$ "+floor.getFloorName()+" $$$$$$$");
+						List<Room> roomList = floor.getRoom();
+						for(Room room:roomList) {
+							System.out.println("         __________"+room.getRoomno()+"__________________");
+							List<Student> studentList = room.getStudent();
+							for(Student student:studentList) {
+								System.out.println("   ---------------------"+student.getName()+"---------------");
+							//	System.out.println("   ---------------------"+student.getRollNo()+"---------------");
+							}
+						
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+package com.Student.Employee.college;
+
+import java.util.LinkedList;
+
+public class Employee1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList l = new LinkedList();
+		Employee emp1 = new Employee();
+		emp1.setName("Alfa");
+		emp1.setCity("pune");
+		emp1.setId(12356);
+		
+		Employee emp2 = new Employee();
+		emp1.setName("Alfiya");
+		emp1.setCity("banglore");
+		emp1.setId(8656);
+		
+		Employee emp3 = new Employee();
+		emp1.setName("Bita");
+		emp1.setCity("bhopal");
+		emp1.setId(2356);
+		
+		l.add(emp1);
+		l.add(emp2);
+		l.add(emp3);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class SeriazableDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Demo D = new Demo();
+		FileOutputSteam FOS = new FileOutputSteam(Demo.java);		
+				
+		
+	}
+
+}

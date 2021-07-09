@@ -1,0 +1,7 @@
+package com.test.tokenizer;
+
+public class CollectionsDemo {
+	public Static void sort(List l) {
+		
+	}
+}

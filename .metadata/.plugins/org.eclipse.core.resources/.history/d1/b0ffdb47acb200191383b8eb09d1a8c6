@@ -1,0 +1,24 @@
+import java.util.HashMap;
+
+public class WeakHashMapdemo {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		HashMap h =new HashMap();
+		Temp t= new Temp();
+		h.put(t, "Durga");
+		System.out.println(h);
+		t=null;
+		System.gc();
+		Thread.sleep(5);
+		System.out.println(h);		
+	}
+
+}
+class Temp{
+	public String toString()
+	{
+		return "temp";
+	}
+
+}

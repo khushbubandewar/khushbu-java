@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class StringE {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="This is a program of string";
+		String[] strr = str.split(" ");
+		ArrayList al new ArrayList();
+		al.add(str);
+		
+	}
+
+}

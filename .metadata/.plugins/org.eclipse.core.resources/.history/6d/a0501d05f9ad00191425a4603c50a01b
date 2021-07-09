@@ -1,0 +1,24 @@
+package com.test.tokenizer;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class StringTokanizerExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		StringTokenizer st = new StringTokenizer("");
+//		while(st.hasMoreElements()) {
+//			String token = st.nextToken();
+//			System.out.println(token+" ");
+		
+	
+		StringTokenizer st = new StringTokenizer(" this is a program of  Stringtokenizer");
+		String token=st.nextToken();
+		while(st.hasMoreElements()) {
+			System.out.println(token);
+		}
+		}
+	}
+
+//}

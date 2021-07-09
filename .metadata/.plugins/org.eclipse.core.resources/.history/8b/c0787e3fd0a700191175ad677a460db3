@@ -1,0 +1,37 @@
+ class Bike extends AbstractExample{
+
+	
+	 public static void main(String[]args) {
+		 
+		 Bike r = new Bike();
+		 r.run();
+		 r.Break();
+		 
+		/* Bike B = new Bike();
+		 B.Break();*/
+	 }
+	 @Override
+	 void  run() {
+		 System.out.println("Run Abstract Example");
+	 }
+ @Override
+	 void Break() {
+		 System.out.println("Break Abstract Example");
+	 }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

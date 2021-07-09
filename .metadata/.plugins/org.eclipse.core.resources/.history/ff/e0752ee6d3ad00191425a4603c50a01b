@@ -1,0 +1,16 @@
+package com.test.tokenizer;
+
+import java.util.StringTokenizer;
+
+public class StringTokanizerExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringTokenizer st = new StringTokenizer("This, is, khushbu");
+		while(st.hasMoreElements()) {
+			String token = st.nextToken();
+			System.out.println(token+" ");
+		}
+	}
+
+}

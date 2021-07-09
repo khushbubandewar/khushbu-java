@@ -1,0 +1,23 @@
+import java.awt.List;
+
+public class ListExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List l = new List();
+		l.add("xxxxx", 1);
+		l.add("dhfftdf");
+		l.add("sdrftyui", 2);
+		l.add("qwerty", 2);
+		System.out.println(l);
+		l.remove(0);
+		System.out.println(l);
+		l.getItem(3);
+		System.out.println(l);
+		
+		
+		
+		
+	}
+
+}

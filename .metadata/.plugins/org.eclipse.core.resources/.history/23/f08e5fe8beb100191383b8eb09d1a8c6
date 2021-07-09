@@ -1,0 +1,25 @@
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
+public class LinkedHashMapIterator1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashMap l=new LinkedHashMap();
+		
+		l.put("b", "Boll");
+		l.put("c", "Cat");
+		l.put("d", "Dog");
+		l.put("a", "Apple");
+		l.put("e", "Elephat");
+		Set<String> set = l.keySet();
+		Iterator<String> itr =set.iterator();
+		while(itr.hasNext()) {
+		String key =itr.next();
+		System.out.println(key+"  "+l.get(key));
+		}
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.hostel.main;
+
+import java.util.Map;
+import java.util.Scanner;
+
+import com.hostel.data.HostelData;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Student Roll Number");
+		int rollNo = sc.nextInt();
+		Map<String, Object> studentHostelDetailsMap = HostelData.getStudentHostelDetail(rollNo);
+		System.out.println("student Data is given below");
+		System.out.println(studentHostelDetailsMap);
+		//Student Name : dhsd               Student Roll No : 2167t4133
+//		System.out.println(HostelData.getTotalStudents());
+	
+	}
+}

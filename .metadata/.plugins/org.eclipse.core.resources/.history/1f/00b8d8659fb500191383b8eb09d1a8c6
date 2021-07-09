@@ -1,0 +1,28 @@
+package com.hostel.model;
+
+import java.util.List;
+
+public class Floor {
+	private	String floorName;
+	private	List<Room> Room;
+	public String getFloorName() {
+		return floorName;
+	}
+	public void setFloorName(String floorName) {
+		this.floorName = floorName;
+	}
+	public List<Room> getRoom() {
+		return Room;
+	}
+	public void setRoom(List<Room> room) {
+		Room = room;
+	}
+	@Override
+	public String toString() {
+		final int maxLen = 10;
+		return "Floor [floorName=" + floorName + ", Room="
+				+ (Room != null ? Room.subList(0, Math.min(Room.size(), maxLen)) : null) + "]";
+	}
+
+
+}

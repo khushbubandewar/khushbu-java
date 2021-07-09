@@ -1,0 +1,10 @@
+
+public class StringBufferExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBufferExa sb = new StringBufferExa();
+		
+	}
+
+}

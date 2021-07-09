@@ -1,0 +1,81 @@
+package com.Hostel;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Hostel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String,Object> map=new HashMap<String,Object>();
+		ArrayList<Building> buildingArr = new ArrayList<Building>();
+		ArrayList<Floor> floorArr = new ArrayList<Floor>();
+		ArrayList<Room> roomArr = new ArrayList<Room>();
+		ArrayList<Student> studentArr = new ArrayList<Student>();
+		
+		Building building1 = new Building();
+		building1.setBuildingName("B1");
+		building1.setBuidingNo(3);
+		building1.setFloorNo(4);
+		building1.setRooms(20);
+		building1.setNoPfStrudent(120);
+		Building building2 = new Building();
+		building1.setBuildingName("B2");
+		building1.setBuidingNo(3);
+		building1.setFloorNo(4);
+		building1.setRooms(20);
+		building1.setNoPfStrudent(120);
+		Building building3 = new Building();
+		building1.setBuildingName("B3");
+		building1.setBuidingNo(3);
+		building1.setFloorNo(4);
+		building1.setRooms(20);
+		building1.setNoPfStrudent(120);
+		
+		Floor floor= new Floor();
+		floor.setNoOfFloor(4);
+		floor.setNoOfRooms(20);
+		Floor floor1= new Floor();
+		floor.setNoOfFloor(4);
+		floor.setNoOfRooms(20);
+		Floor floor2= new Floor();
+		floor.setNoOfFloor(4);
+		floor.setNoOfRooms(20);
+		
+		Room room = new Room();
+		room.setNoOfStudent(120);
+		room.setRoomno(25);
+		Room room1 = new Room();
+		room.setNoOfStudent(120);
+		room.setRoomno(25);
+		Room room2 = new Room();
+		room.setNoOfStudent(120);
+		room.setRoomno(25);
+		
+		Student student1 = new Student();
+		student1.setName("Khushbu");
+		student1.setRollNo(001);
+		student1.setNoOfBuilding("B1");
+		student1.setNoOfFloor(1);
+		student1.setRoomNo(002);
+		Student student2 = new Student();
+		student1.setName("Muskan");
+		student1.setRollNo(002);
+		student1.setNoOfBuilding("B2");
+		student1.setNoOfFloor(4);
+		student1.setRoomNo(15);
+		Student student3 = new Student();
+		student1.setName("Shweta");
+		student1.setRollNo(003);
+		student1.setNoOfBuilding("B3");
+		student1.setNoOfFloor(3);
+		student1.setRoomNo(12);
+		
+		
+		
+		
+		
+	}
+
+}

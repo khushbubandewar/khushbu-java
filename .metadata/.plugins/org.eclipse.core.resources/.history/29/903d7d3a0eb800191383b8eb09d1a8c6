@@ -1,0 +1,10 @@
+package com.Student.Employee.college;
+
+public class CostomizeExceptionDemo extends Exception{
+	CostomizeExceptionDemo(String message){
+		super(message);
+	}
+	CostomizeExceptionDemo(){
+		super();
+	}
+}

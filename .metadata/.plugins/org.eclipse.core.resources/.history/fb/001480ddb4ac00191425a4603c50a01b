@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class palindromeEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the integer value  : ");
+		Integer obj =sc.nextInt();
+		 
+				  
+					Integer[] strArr =obj.split("");
+					boolean palindrome = true;
+					int length = strArr.length;
+					for(int i=0; i<length/2;i++) {
+						if(!strArr[i].toUpperCase().equals(strArr[length-i-1].toUpperCase())){
+							 palindrome = false;
+									break;
+						}
+						
+					}
+					if(palindrome) {
+						System.out.println(str+" String is  palindrome");
+					}else {
+						System.out.println(str+"  String is not palindrome");
+					}
+					
+	}
+
+}

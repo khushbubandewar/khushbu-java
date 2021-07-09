@@ -1,0 +1,11 @@
+
+	abstract class AbstractExample {
+	abstract void Run();
+	abstract void Break();
+}
+
+	 class bike extends AbstractExample{
+		void run() {
+			System.out.println("Run method");
+		}
+	}

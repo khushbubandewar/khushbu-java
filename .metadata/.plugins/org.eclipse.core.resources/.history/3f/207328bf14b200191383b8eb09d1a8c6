@@ -1,0 +1,27 @@
+import java.util.Comparator;
+import java.util.Set;
+
+public class HashMapSetString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> set = new TreeSet(new AlphabetComparator());
+		set.add("boll");
+		set.add("cat");
+		set.add("apple");
+		set.add("dog");
+		set.add("fish");
+		for (String str : set) {
+			System.out.print(str);
+		}
+	}
+}
+class AlphabetComparator implements Comparator{
+	public int compare(Object obj1,Object obj2) {
+		String s1= (String) obj1;
+		String s2=obj2.toString();
+		return -s1.compareTo(s2);
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+package com.Student.Employee.college;
+
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
+public class College1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashMap l=new LinkedHashMap();
+		Employee emp1 = new Employee();
+		emp1.setName("Alfa");
+		emp1.setCity("pune");
+		emp1.setId(12356);
+	
+		
+	}
+
+}

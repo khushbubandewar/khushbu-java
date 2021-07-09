@@ -1,0 +1,36 @@
+package com.test.tokenizer;
+
+public class Student {
+	private String name;
+	private long rollNo;
+	private String city;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getRollNo() {
+		return rollNo;
+	}
+
+	public void setRollNo(long rollNo) {
+		this.rollNo = rollNo;
+	}
+
+	public String getAddress() {
+		return city;
+	}
+
+	public void setAddress(String address) {
+		this.city = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", rollNo=" + rollNo + ", address=" + city + "]";
+	}
+}

@@ -1,0 +1,27 @@
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "this is a program of string";
+		boolean duplicate = false;
+		String[] strArr = str.split(" ");
+		for (int i = 0; i <= strArr.length; i++) {
+			int count = 1;
+			for (int j = 0; j <= strArr.length; j++) {
+				if (strArr[i].equals(strArr[j])) {
+					duplicate = false;
+					strArr[j] = "0";
+					count++;
+				} else {
+					duplicate = true;
+					continue;
+				}
+					if (duplicate) {
+						System.out.println(duplicate);
+					}
+				}
+			}
+		}
+	}
+

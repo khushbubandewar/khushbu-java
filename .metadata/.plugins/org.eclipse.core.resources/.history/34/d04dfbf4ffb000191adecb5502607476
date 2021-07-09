@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class IteratorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList al = new ArrayList();
+		for (int i = al.size(); i <0; i--) {
+			al.add(i);
+			System.out.print(al);
+		} 
+		Iterator i = al.iterator(); 
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+		
+	}
+
+}

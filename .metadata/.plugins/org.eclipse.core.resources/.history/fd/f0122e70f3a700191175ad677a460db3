@@ -1,0 +1,44 @@
+import java.util.*;
+public class TeacherDOB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList al = new ArrayList();
+		
+		Teacher teacher = new Teacher();
+		teacher.setName("Khushbu");
+		teacher.setFatherName("ABC");
+		teacher.setAddress("DYTTT");
+		teacher.setAge(50);
+		teacher.setID(1234);
+		Teacher teacher1 = new Teacher();
+		teacher1.setFatherName(  "Rameshvar bandewar"  );
+		
+		Teacher teacher2 = new Teacher();
+		teacher2.setAddress(   "Mohkhed"  );
+		
+		Teacher teacher3 = new Teacher();
+		teacher3.setID(  234567  );
+	   
+		Teacher teacher4 = new Teacher();
+		teacher4.setAge(  20  );
+		al.add(teacher);
+		al.add(teacher1);
+		al.add(teacher2);
+		al.add(teacher3);
+		al.add(teacher4);
+		int size = al.size();
+		for(int i =0 ; i<size;i++) {
+			System.out.println("Index "+i+" Value"+al.get(i));
+			
+		}
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		
+	}
+
+}

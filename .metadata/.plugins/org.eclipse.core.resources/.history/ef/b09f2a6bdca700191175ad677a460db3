@@ -1,0 +1,35 @@
+import java.io.Serializable;
+
+public class Teacher implements Serializable {
+
+	private String tName;
+	private String tFatherName;
+	private String tAddress;
+	private int RollNo;
+	private int age;
+	
+	public String getsName() {
+		return tName;
+	}
+
+	public void settName(String tName) {
+		this.tName = tName;
+	}
+	
+	public String gettAddress() {
+		return tAddress;
+	}
+
+	public void settAddress(String tAddress) {
+		this.tAddress = tAddress;
+	}
+	
+	public String gettFatherName() {
+		return tFatherName;
+	}
+
+	public void settFatherName(String tFatherName) {
+		this.tFatherName = tFatherName;
+	}
+
+}

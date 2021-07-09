@@ -1,0 +1,6 @@
+
+public class StudentExa {
+	private String name;
+	private String address;
+	private long rollNo;
+}

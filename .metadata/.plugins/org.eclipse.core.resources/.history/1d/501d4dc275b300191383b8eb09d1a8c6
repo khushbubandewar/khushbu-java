@@ -1,0 +1,30 @@
+package com.Student.Employee.college;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import com.test.tokenizer.Student;
+
+import java.util.Set;
+
+public class TestHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String,Object> map=new HashMap<String,Object>();
+		Set<Entry<String,Object>> set=map.entrySet();
+		ArrayList<Student> al=new ArrayList();
+		Student st1=new Student();
+		st1.setName("Alfa");
+		st1.setAddress("bhopal");
+		st1.setRollNo(87698);
+		al.add(st1);
+		for(Entry<String,Object> entry:set) {
+			System.out.print(entry.getKey()+"  "+entry.getValue());
+		}
+		
+	}
+
+}

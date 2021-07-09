@@ -1,0 +1,15 @@
+package com.hostel.main;
+
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.data.HostelData;
+import com.hostel.model.Block;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		
+		Map<String, List<Block>> hostelData = HostelData.hostelData;
+		System.out.println(hostelData);
+	}
+}

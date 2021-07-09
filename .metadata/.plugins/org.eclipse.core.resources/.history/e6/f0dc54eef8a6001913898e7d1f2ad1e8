@@ -1,0 +1,16 @@
+import java.util.*;
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList AL = new ArrayList();
+		AL.add("k");
+		AL.add(1);
+		AL.add("*");
+		AL.addAll(AL);
+		
+		
+		
+	}
+
+}

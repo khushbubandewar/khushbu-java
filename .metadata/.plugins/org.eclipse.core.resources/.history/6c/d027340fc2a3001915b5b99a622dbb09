@@ -1,0 +1,10 @@
+
+public class EqualsEx {
+	int i;
+	String Name;
+	
+	EqualsEx(){
+		this.i=i;
+		this.Name=Name;
+	}
+}

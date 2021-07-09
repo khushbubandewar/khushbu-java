@@ -1,0 +1,37 @@
+package com.hostel.model;
+
+import java.util.List;
+
+public class Room {
+private	String roomNo;
+private	int occupiedStudent;
+private	int totalOccupancy;
+private	List<Student> studentList;
+	
+	public int getOccupiedStudent() {
+		return occupiedStudent;
+	}
+	public void setOccupiedStudent(int occupiedStudent) {
+		this.occupiedStudent = occupiedStudent;
+	}
+	public int getTotalOccupancy() {
+		return totalOccupancy;
+	}
+	public void setTotalOccupancy(int totalOccupancy) {
+		this.totalOccupancy = totalOccupancy;
+	}
+	public List<Student> getStudent() {
+		return studentList;
+	}
+	public void setStudent(List<Student> student) {
+		studentList = student;
+	}
+	
+	public String getRoomNo() {
+		return roomNo;
+	}
+	public void setRoomNo(String roomNo) {
+		this.roomNo = roomNo;
+	}
+
+}

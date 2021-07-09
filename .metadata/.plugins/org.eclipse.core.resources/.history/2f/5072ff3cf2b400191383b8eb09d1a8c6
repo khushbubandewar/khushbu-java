@@ -1,0 +1,22 @@
+package com.hostel.model;
+
+public class Block {
+	private String name;
+	private String buildings;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBuildings() {
+		return buildings;
+	}
+	public void setBuildings(String buildings) {
+		this.buildings = buildings;
+	}
+	@Override
+	public String toString() {
+		return "Block [name=" + name + ", buildings=" + buildings + "]";
+	}
+}

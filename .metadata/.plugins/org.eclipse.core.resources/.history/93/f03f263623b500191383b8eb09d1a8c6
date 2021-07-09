@@ -1,0 +1,25 @@
+package com.hostel.main;
+
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.data.HostelData;
+import com.hostel.model.Block;
+import com.hostel.model.Building;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		
+		Map<String, List<Block>> hostelData = HostelData.hostelData;
+		System.out.println(hostelData.get("GirlsHostel"));
+		List<Block> blockList = hostelData.get("GirlsHostel");
+		for(Block block : blockList) {
+			System.out.println("======================="+block.getName()+" =======");
+			List<Building> buildingList = block.getBuilding();
+			for(Building building : buildingList) {
+				System.out.println("          **********"+building.getBuildingName()+"***********");
+			}
+		}
+		
+	}
+}

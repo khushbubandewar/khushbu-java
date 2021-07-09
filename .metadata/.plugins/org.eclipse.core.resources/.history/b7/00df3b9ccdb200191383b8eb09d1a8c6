@@ -1,0 +1,33 @@
+package com.test.tokenizer;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class HashMapDuplicateChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "this is a program to find duplicate charcters in string";
+		String[] strArr = str.split("");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for (int i = 0; i < strArr.length; i++) {
+			if(strArr[i].trim().isEmpty()) {
+				continue;
+				
+			}
+			if (map.get(strArr[i]) == null) {
+				map.put(strArr[i], 1);
+			}else{
+				map.put(strArr[i], (map.get(strArr[i])+1));
+			}
+			
+		
+
+		}
+		for(Entry<String, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey()+"  "+entry.getValue());
+		}
+	}
+
+}

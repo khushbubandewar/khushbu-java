@@ -1,0 +1,26 @@
+
+public class StringExa4 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		char[] ch = {'a','b','c','d'};
+//		String s =  new String(ch);
+//		System.out.println(s);
+//		//String s1 = new String(byte[] b);
+//		byte[] b = {100,101,102,103};
+//		String s1 = new String(b);
+//		System.out.println(s1);
+		
+		//public char charAt(int index);
+		String s = "sdfghrty";
+		System.out.println(s.charAt(5));
+		System.out.println(s.length());
+		//System.out.println(s.charAt(9));
+		
+//		public String concat(String S);
+		String S= "Durga";
+		 S=S.concat("wertyu");
+		System.out.println(S);
+	}
+
+}

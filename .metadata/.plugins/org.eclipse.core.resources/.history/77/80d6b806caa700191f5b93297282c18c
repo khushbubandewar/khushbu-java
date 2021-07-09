@@ -1,0 +1,16 @@
+
+public interface printable {
+	public void print();
+	public void show();
+	public  void display();
+}
+
+abstract class Abc implements printable{
+	public void print() {
+		System.out.println("print interface");
+	}
+	public static void main(String[]args) {
+		Abc a = new Abc();
+		a.print();
+	}
+}

@@ -1,0 +1,27 @@
+package com.test.tokenizer;
+
+import java.util.Comparator;
+
+public class HashSetComparator  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+	}
+
+	
+
+}
+ class StNameComparator implements Comparator<Integer>{
+	 @Override
+		public int compare(Integer std1, Integer std2) {
+			if( std1<std2) {
+				return 1;
+			}else if(std1>std2) {
+				return -1;
+			}else {
+				return 0;
+			}
+			
+		}
+ }

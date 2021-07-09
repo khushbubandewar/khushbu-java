@@ -1,0 +1,5 @@
+package com.test.synchronize;
+
+public class MyThread2 {
+
+}

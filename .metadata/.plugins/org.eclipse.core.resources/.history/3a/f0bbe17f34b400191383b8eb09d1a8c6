@@ -1,0 +1,37 @@
+package com.Hostel;
+
+public class Building {
+	int buidingNo;
+	int FloorNo;
+	int rooms;
+	int noPfStrudent;
+	public int getBuidingNo() {
+		return buidingNo;
+	}
+	public void setBuidingNo(int buidingNo) {
+		this.buidingNo = buidingNo;
+	}
+	public int getFloorNo() {
+		return FloorNo;
+	}
+	public void setFloorNo(int floorNo) {
+		FloorNo = floorNo;
+	}
+	public int getRooms() {
+		return rooms;
+	}
+	public void setRooms(int rooms) {
+		this.rooms = rooms;
+	}
+	public int getNoPfStrudent() {
+		return noPfStrudent;
+	}
+	public void setNoPfStrudent(int noPfStrudent) {
+		this.noPfStrudent = noPfStrudent;
+	}
+	@Override
+	public String toString() {
+		return "Buiding [buidingNo=" + buidingNo + ", FloorNo=" + FloorNo + ", rooms=" + rooms + ", noPfStrudent="
+				+ noPfStrudent + "]";
+	}
+}

@@ -1,0 +1,12 @@
+package com.test.tokenizer;
+
+import java.util.Comparator;
+
+public class HashSetComparator implements Comparator<T> {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

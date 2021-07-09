@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class IteratorExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,String> hm = new HashMap<String,String>();
+		hm.put("1", "a");
+		hm.put("3", "a");
+		hm.put("abc","sfsdsfsdf");
+		
+		//1
+		Set<String> set = hm.keySet();
+		Iterator<String> itr = set.iterator();
+		while(itr.hasNext()) {
+			String key =  itr.next();
+			System.out.println("Key "+key+" Value"+hm.get(key));
+		}
+	}
+
+}

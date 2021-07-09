@@ -1,0 +1,38 @@
+package com.Hostel;
+
+public class Room {
+	int roomno;
+	int occupiedStudent;
+	int totalOccupancy;
+	int student;
+	public int getRoomno() {
+		return roomno;
+	}
+	public void setRoomno(int roomno) {
+		this.roomno = roomno;
+	}
+	public int getOccupiedStudent() {
+		return occupiedStudent;
+	}
+	public void setOccupiedStudent(int occupiedStudent) {
+		this.occupiedStudent = occupiedStudent;
+	}
+	public int getTotalOccupancy() {
+		return totalOccupancy;
+	}
+	public void setTotalOccupancy(int totalOccupancy) {
+		this.totalOccupancy = totalOccupancy;
+	}
+	public int getStudent() {
+		return student;
+	}
+	public void setStudent(int student) {
+		this.student = student;
+	}
+	@Override
+	public String toString() {
+		return "Room [roomno=" + roomno + ", occupiedStudent=" + occupiedStudent + ", totalOccupancy=" + totalOccupancy
+				+ ", student=" + student + "]";
+	}
+
+}

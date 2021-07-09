@@ -1,0 +1,32 @@
+import java.util.*;
+public class TeacherDOB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList AL = new ArrayList();
+		
+		Teacher teacher = new Teacher();
+		teacher.setName("Khushbu");
+		
+		Teacher teacher1 = new Teacher();
+		teacher1.setFatherName("Rameshvar bandewar");
+		
+		Teacher teacher2 = new Teacher();
+		teacher2.setAddress("Mohkhed");
+		
+		Teacher teacher3 = new Teacher();
+		teacher3.setID(234567);
+	   
+		Teacher teacher4 = new Teacher();
+		teacher4.setAge(20);
+		
+		
+		System.out.println(teacher);
+		System.out.println(teacher1);
+		System.out.println(teacher2);
+		System.out.println(teacher3);
+		System.out.println(teacher4);
+		
+	}
+
+}

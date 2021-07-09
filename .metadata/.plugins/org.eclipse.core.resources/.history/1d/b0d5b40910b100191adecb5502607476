@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class WeakHasMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap m= new HashMap();
+		Temp t= new Temp();
+		m.put(t, "durga");
+		System.out.print(m);
+		t=null;
+	}
+
+}

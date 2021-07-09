@@ -1,0 +1,7 @@
+package com.hostel.main;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+
+	}
+}

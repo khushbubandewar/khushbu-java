@@ -1,0 +1,116 @@
+package com.Hostel;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Hostel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String,Object> map=new HashMap<String,Object>();
+		ArrayList<Building> buildingArr = new ArrayList<Building>();
+		ArrayList<Floor> floorArr = new ArrayList<Floor>();
+		ArrayList<Room> roomArr = new ArrayList<Room>();
+		ArrayList<Student> studentArr = new ArrayList<Student>();
+		
+		Building building1 = new Building();
+		building1.setBuildingName("B1");
+		building1.setBuildingNo(1);
+		building1.setFloorNo(4);
+		building1.setRooms(20);
+		building1.setNoPfStrudent(120);
+		Building building2 = new Building();
+		building2.setBuildingName("B2");
+		building2.setBuildingNo(2);
+		building2.setFloorNo(3);
+		building2.setRooms(20);
+		building2.setNoPfStrudent(125);
+		Building building3 = new Building();
+		building3.setBuildingName("B3");
+		building3.setBuildingNo(3);
+		building3.setFloorNo(2);
+		building3.setRooms(20);
+		building3.setNoPfStrudent(120);
+		
+		Floor floor= new Floor();
+		floor.setNoOfFloor(4);
+		floor.setNoOfRooms(9);
+		Floor floor1= new Floor();
+		floor.setNoOfFloor(3);
+		floor.setNoOfRooms(15);
+		Floor floor2= new Floor();
+		floor.setNoOfFloor(2);
+		floor.setNoOfRooms(10);
+		
+		Room room = new Room();
+		room.setNoOfStudent(20);
+		room.setRoomno(25);
+		Room room1 = new Room();
+		room.setNoOfStudent(10);
+		room.setRoomno(12);
+		Room room2 = new Room();
+		room.setNoOfStudent(12);
+		room.setRoomno(25);
+		
+		Student student1 = new Student();
+		student1.setName("Khushbu");
+		student1.setRollNo(001);
+		student1.setNoOfBuilding("B1");
+		student1.setNoOfFloor(1);
+		student1.setRoomNo(002);
+		Student student2 = new Student();
+		student1.setName("Muskan");
+		student1.setRollNo(002);
+		student1.setNoOfBuilding("B2");
+		student1.setNoOfFloor(4);
+		student1.setRoomNo(15);
+		Student student3 = new Student();
+		student1.setName("Shweta");
+		student1.setRollNo(003);
+		student1.setNoOfBuilding("B3");
+		student1.setNoOfFloor(3);
+		student1.setRoomNo(12);
+		
+		buildingArr.add(building1);
+		buildingArr.add(building2);
+		buildingArr.add(building3);
+		floorArr.add(floor);
+		floorArr.add(floor1);
+		floorArr.add(floor2);
+		roomArr.add(room);
+		roomArr.add(room1);
+		roomArr.add(room2);
+		studentArr.add(student1);
+		studentArr.add(student2);
+		studentArr.add(student3);
+		map.put("buildingArr", buildingArr);
+		map.put("floorArr", floorArr);
+		map.put("roomArr", roomArr);
+		map.put("studentArr", studentArr);
+		
+		Set<Entry<String,Object>> set = map.entrySet();
+		for(Entry<String,Object> entry:set) {
+			System.out.println(entry.getKey()+"  "+entry.getValue());
+			if(entry.getKey().equalsIgnoreCase("buildingArr")) {
+				List<Building> buildingList =(List<Building>)entry.getValue();
+				for(Building building :buildingList ) {
+					System.out.println("Buiding Name  :"+building.getBuildingName());
+					System.out.println("BuildingNo  :"+building.getBuildingNo());
+					System.out.println("Building FloorNo  :"+building.getFloorNo());
+					System.out.println("Building Student  :"+building.getNoPfStrudent());
+					System.out.println("Building Rooms  :"+building.getRooms());
+					
+				}
+			}
+		}
+		
+		
+		
+		
+	}
+
+}

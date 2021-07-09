@@ -1,0 +1,29 @@
+package com.Hostel;
+
+public class Hostel {
+	private String name;
+	private String address;
+	private int block;
+	@Override
+	public String toString() {
+		return "Hostel [name=" + name + ", address=" + address + ", block=" + block + "]";
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public int getBlock() {
+		return block;
+	}
+	public void setBlock(int block) {
+		this.block = block;
+	}
+}

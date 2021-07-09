@@ -1,0 +1,33 @@
+package com.Student.Employee.college;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Employee> l = new LinkedList<Employee>();
+		Employee emp1 = new Employee();
+		emp1.setName("Alfa");
+		emp1.setCity("pune");
+		emp1.setId(12356);
+		Map<Employee,Employee> map=new HashMap<Employee,Employee>();
+		Set<Entry<Employee,Employee>> set=map.entrySet();
+//		Iterator<Employee> itr = set.iterator();
+		for(Entry<Employee,Employee> entry:set) {
+			System.out.println(entry.getKey()+" "+entry.getValue());
+		}
+					
+			
+		}
+		
+		}
+		
+	}
+
+

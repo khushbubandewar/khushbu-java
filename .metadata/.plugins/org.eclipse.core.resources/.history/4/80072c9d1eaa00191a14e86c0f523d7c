@@ -1,0 +1,15 @@
+import java.lang.*;
+public class StringBuffer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			StringBuffer sb = new StringBuffer();
+			sb.append("pi value is ");
+			sb.append(3.14);
+	        sb.append("it is  exactly true");
+			System.out.println(sb);
+	}
+
+	
+
+}

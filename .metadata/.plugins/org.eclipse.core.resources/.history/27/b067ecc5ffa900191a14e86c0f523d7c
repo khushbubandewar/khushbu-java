@@ -1,0 +1,10 @@
+
+public class CloneExa implements Cloneable {
+	int i =10;
+	
+	public static void main(String[] args) {
+		CloneExa ce = new CloneExa();
+		CloneExa ecCopy = ce.clone();
+				}
+
+}

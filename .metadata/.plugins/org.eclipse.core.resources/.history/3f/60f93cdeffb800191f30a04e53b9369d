@@ -1,0 +1,11 @@
+package com.test.multithreading;
+
+public class MyThread2 {
+
+		public void run() {
+			System.out.println(" Run Method ");
+		}
+		public void start() {
+			System.out.println(" Start Method ");
+		}
+}

@@ -1,0 +1,10 @@
+package com.Student.Employee.college;
+
+public class CustomException extends Exception{
+	CustomException(String message){
+		super(message);
+	}
+	CustomException(){
+		super();
+	}
+}

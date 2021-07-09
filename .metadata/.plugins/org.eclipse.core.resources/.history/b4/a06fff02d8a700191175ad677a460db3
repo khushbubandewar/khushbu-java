@@ -1,0 +1,5 @@
+package com.basic.learn.student.management;
+
+public class Student {
+
+}

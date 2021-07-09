@@ -1,0 +1,8 @@
+
+public class College {
+	String university;
+	String department;
+	String  branch;
+	String faculty;
+	
+}

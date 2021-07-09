@@ -1,0 +1,7 @@
+package com.Hostel;
+
+public class HostelModel {
+ private String host
+
+
+}

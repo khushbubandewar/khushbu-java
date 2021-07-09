@@ -1,0 +1,13 @@
+
+public class CompareToExa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String S1 =new String("ABC");
+		String S2 =new String("abc");
+		
+		System.out.println(S1.equals(S2));
+		System.out.println();
+	}
+
+}

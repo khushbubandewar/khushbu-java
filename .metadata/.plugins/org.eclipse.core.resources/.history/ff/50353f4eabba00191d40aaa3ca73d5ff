@@ -1,0 +1,6 @@
+package com.test.synchronize;
+
+public class Thread1 extends Thread{
+	Table t;
+	Table
+}

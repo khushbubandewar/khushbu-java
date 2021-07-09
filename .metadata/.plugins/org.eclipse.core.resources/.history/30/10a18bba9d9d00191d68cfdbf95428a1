@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.basic;
+
+/**
+ * @author Anil
+ *
+ */
+public class DataTypes {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

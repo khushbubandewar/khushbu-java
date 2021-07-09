@@ -1,0 +1,35 @@
+package com.Student.Employee.college;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import com.test.tokenizer.Student;
+
+public class TestHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String,Object> map=new HashMap<String,Object>();
+		LinkedHashMap<String,Object> studentlist=new LinkedHashMap();
+		Student st1=new Student();
+		st1.setName("Alfa");
+		st1.setAddress("bhopal");
+		st1.setRollNo(87698);
+		studentlist.put("st1", st1);	
+		Set<Entry<String,Object>> set=studentlist.entrySet();
+		for(Entry<String,Object> entry:set) {
+			System.out.print(entry.getKey()+"  "+entry.getValue());
+			if(entry.getKey().equalsIgnoreCase("studentlist")) {
+				for(Entry<String, Object> obj :studentlist.entrySet() ) {
+					System.out.println("Student Name :"+st1.getName());
+				}
+			}
+			
+		}
+		
+	}
+
+}

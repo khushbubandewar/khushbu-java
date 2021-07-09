@@ -1,0 +1,18 @@
+
+public class ConvertIntoString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=120;
+		float f=12.13f;
+		double d=2345.0d;
+		boolean b=true;
+		
+		System.out.print("After converting into String  : ");
+		
+		System.out.print(" String value of int  : "+String.valueOf(i));
+
+
+	}
+
+}

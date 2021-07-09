@@ -1,0 +1,240 @@
+package com.hostel.data;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.model.Block;
+import com.hostel.model.Building;
+import com.hostel.model.Floor;
+import com.hostel.model.Hostel;
+import com.hostel.model.Room;
+import com.hostel.model.Student;
+
+
+public class HostelData {
+ public static Map<String, List<Block>> hostelData = new HashMap<String, List<Block>>();
+ public static List<Block> blockList = new ArrayList<Block>();
+ static {
+	// TODO Auto-generated method stub
+	 
+	 		
+			List<Building> buildingList = new ArrayList<Building>();
+			List<Floor> floorList = new ArrayList<Floor>();
+			List<Room> roomList = new ArrayList<Room>();
+			List<Student> studentList = new ArrayList<Student>();
+			
+			Hostel hostel1 = new Hostel();
+			hostel1.setName("GirlsHostel");
+			hostel1.setBlockList(blockList);
+			hostel1.setAddress("Pune");
+			
+			Map<String,List<Block>> blockData = new HashMap<String,List<Block>>();
+			blockData.put("VAYU", blockList);
+			blockData.put("Pawan", blockList);
+			blockData.put("Agni", blockList);
+			blockData.put("Jal", blockList);
+			
+						
+			Building building1 = new Building();
+			building1.setBuildingName("A1");
+			building1.setFloor(floorList);
+			building1.setNameOfFloor("1st Floor");
+			Building building2 = new Building();
+			building2.setBuildingName("B1");
+			building2.setFloor(floorList);
+			building2.setNameOfFloor("2nd Floor");
+			Building building3 = new Building();
+			building3.setBuildingName("C1");
+			building3.setFloor(floorList);
+			building3.setNameOfFloor("Third Floor");
+			Building building4 = new Building();
+			building4.setBuildingName("D1");
+			building4.setFloor(floorList);
+			building4.setNameOfFloor("Forth Floor");			
+			buildingList.add(building1);
+			buildingList.add(building2);
+			buildingList.add(building3);
+			buildingList.add(building4);
+			Map<String,List<Building>> buildingData = new HashMap<String,List<Building>>();
+			buildingData.put("A1", buildingList);
+			buildingData.put("B1", buildingList);
+			buildingData.put("C1", buildingList);
+			buildingData.put("D1", buildingList);
+			
+			Floor floor1 = new Floor();
+			floor1.setFloorName("1st Floor");
+			floor1.setRoom(roomList);
+			Floor floor2 = new Floor();
+			floor2.setFloorName("2nd Floor");
+			floor2.setRoom(roomList);
+			Floor floor3 = new Floor();
+			floor3.setFloorName("3rd Floor");
+			floor3.setRoom(roomList);
+			Floor floor4 = new Floor();
+			floor4.setFloorName("4th Floor");
+			floor4.setRoom(roomList);			
+			floorList.add(floor1);	
+			floorList.add(floor2);
+			floorList.add(floor3);
+			floorList.add(floor4);
+			Map<String,List<Floor>> floorData = new HashMap<String,List<Floor>>();
+			floorData.put("1st Floor", floorList);
+			floorData.put("2nd Floor", floorList);
+			floorData.put("3rd Floor", floorList);
+			floorData.put("4th Floor", floorList);
+			
+			Room room1 = new Room();
+			room1.setRoomno(101);
+			room1.setOccupiedStudent(5);
+			room1.setTotalOccupancy(7);
+			room1.setStudent(studentList);
+			Room room2 = new Room();
+			room2.setRoomno(102);
+			room2.setOccupiedStudent(4);
+			room2.setTotalOccupancy(7);
+			room2.setStudent(studentList);
+			Room room3 = new Room();
+			room3.setRoomno(103);
+			room3.setOccupiedStudent(5);
+			room3.setTotalOccupancy(7);
+			room3.setStudent(studentList);
+			Room room4 = new Room();
+			room4.setRoomno(104);
+			room4.setOccupiedStudent(4);
+			room4.setTotalOccupancy(7);
+			room4.setStudent(studentList);
+			roomList.add(room1);
+			roomList.add(room2);
+			roomList.add(room3);
+			roomList.add(room4);
+			Map<String,List<Room>> roomData = new HashMap<String,List<Room>>();
+			roomData.put("room1", roomList);
+			roomData.put("room2", roomList);
+			roomData.put("room3", roomList);
+			roomData.put("room4", roomList);
+			
+			Student student1 = new Student();
+			student1.setName("Aaru");
+//			student1.setRollNo(001);
+			Student student2 = new Student();
+			student2.setName("khushbu");
+//			student2.setRollNo(002);
+			Student student3 = new Student();
+			student3.setName("jay");
+//			student3.setRollNo(003);
+			Student student4 = new Student();
+			student4.setName("veeru");
+//			student4.setRollNo(004);
+			studentList.add(student1);
+			studentList.add(student2);
+			studentList.add(student3);
+			studentList.add(student4);
+			Map<String,List<Student>> studentData = new HashMap<String,List<Student>>();
+			studentData.put("student1", studentList);
+			studentData.put("student2", studentList);
+			studentData.put("student3", studentList);
+			studentData.put("student4", studentList);
+			
+			Block block1 = new Block();
+			block1.setName("VAYU");
+			block1.setBuilding(buildingList);
+			Block block2 = new Block();
+			block2.setName("Agni");
+			block2.setBuilding(buildingList);
+			Block block3 = new Block();
+			block3.setName("Pawan");
+			block3.setBuilding(buildingList);
+			Block block4 = new Block();
+			block4.setName("Jal");
+			block4.setBuilding(buildingList);			
+			blockList.add(block1);
+			blockList.add(block2);
+			blockList.add(block3);
+			blockList.add(block4);
+			
+			Hostel hostel = new Hostel();
+		
+			hostelData.put(hostel1.getName(), blockList);
+			try {
+				createHostelData("Agni", 4, 5, 6, 2, 4, 2);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}			
+ }
+ public static void createHostelData(String blockName, int noOfBuilding, int noOfFloors, int noOfRooms, int noOfStdInRoom, int roomCapacity, int noOfStudent) throws IOException {
+	    for(int i=1;i<=noOfBuilding; i++) {
+		    Building building1 = new Building();
+			building1.setBuildingName(blockName+i);
+			int studentNameIndex = 0;
+			List<Floor> floorList = new ArrayList<Floor>();
+			for(int j=1;j<=noOfFloors; j++) {
+				Floor floor = new Floor();
+				if(j == 1) {
+					floor.setFloorName("1st Floor");
+				}else if(j==2) {
+					floor.setFloorName("2nd Floor");
+				}else if(j==3) {
+					floor.setFloorName("3rd Floor");
+				}else {
+					floor.setFloorName(j+"th Floor");
+				}
+				List<Room> roomList = new ArrayList<Room>();
+				for(int k=1;k<=noOfRooms; k++) {
+					Room room = new Room();
+					room.setRoomno(j*100 + k);
+					room.setOccupiedStudent(noOfStdInRoom);
+					room.setTotalOccupancy(roomCapacity);
+					 String blkName = "";
+					 if(i == 1) {
+						 blkName = "A";
+					 }else if(i == 2) {
+						 blkName = "B";
+					 }else if(i == 3) {
+						 blkName = "C";
+					 }else if(i==4) {
+						 blkName = "D";
+					 }
+					 String fileName = "E:\\khushbu\\HostelManagement\\src\\com\\hostel\\data\\Block"+blkName+"StudentList.txt"; 	 
+					 File file = new File(fileName); 
+					  
+					  BufferedReader br = new BufferedReader(new FileReader(file)); 
+					  List<String> studentNameList = new ArrayList<>();
+					  String st; 
+					  while ((st = br.readLine()) != null) {
+						  studentNameList.add(st);
+					  } 
+					List<Student> studentList = new ArrayList<Student>();
+					for(int l=1;l<=noOfStudent; l++) {
+						studentNameIndex = studentNameIndex + 1;
+						Student student = new Student();
+						try {
+						student.setName(studentNameList.get(studentNameIndex));
+						}catch(Exception e) {
+							student.setName("Dummy");
+						}
+						student.setRollNo((char)i+10000+studentNameIndex+"");
+						student.setRoomNo(room.getRoomno());
+						studentList.add(student);
+					}
+				    room.setStudent(studentList);
+					roomList.add(room);
+				}
+				floor.setRoom(roomList);
+				floorList.add(floor);
+			}
+			building1.setFloor(floorList);
+	    }
+		
+	    Block block = new Block();
+		block.setName(blockName);
+		blockList.add(block);
+}
+}

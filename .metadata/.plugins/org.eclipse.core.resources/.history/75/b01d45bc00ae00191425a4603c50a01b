@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class ReverseWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter String  :  ");
+		String str= new String();
+		str=sc.next();
+		String[] strArr=str.split(" ");
+//		StringTokenizer  st= new StringTokenizer(str,"");
+//		String reverseLine="";
+//		try {
+//		while(st.hasMoreElements())
+//		{
+//			reverseLine = st.nextToken()+" "+reverseLine;
+//		}
+//		System.out.print(reverseLine);
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.print(e);
+//		}
+		for(int  i=strArr.length;i>0;i++) {
+			System.out.println(strArr[i-1]);
+			
+		}
+				
+	}
+}
+

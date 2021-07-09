@@ -1,0 +1,22 @@
+package com.Hostel;
+
+public class Floor {
+	int noOfFloor;
+	int noOfRooms;
+	public int getNoOfFloor() {
+		return noOfFloor;
+	}
+	public void setNoOfFloor(int noOfFloor) {
+		this.noOfFloor = noOfFloor;
+	}
+	public int getNoOfRooms() {
+		return noOfRooms;
+	}
+	public void setNoOfRooms(int noOfRooms) {
+		this.noOfRooms = noOfRooms;
+	}
+	@Override
+	public String toString() {
+		return "Floor [noOfFloor=" + noOfFloor + ", noOfRooms=" + noOfRooms + "]";
+	}
+}

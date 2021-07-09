@@ -1,0 +1,10 @@
+
+public class HashcodeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashcode H = new Hashcode(i);
+		System.out.println(H);
+	}
+
+}

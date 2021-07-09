@@ -1,0 +1,13 @@
+package com.hostel.main;
+
+import java.util.Map;
+
+import com.hostel.data.HostelData;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		Map<String, Object> studentHostelDetailsMap = HostelData.getStudentHostelDetail(10746);
+		
+		
+	}
+}

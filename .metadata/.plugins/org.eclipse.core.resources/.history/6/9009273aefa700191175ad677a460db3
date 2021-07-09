@@ -1,0 +1,55 @@
+import java.io.Serializable;
+//POGO or  DTO
+public class Teacher implements Serializable {
+
+	private String tName;
+	private String tFatherName;
+	private String tAddress;
+	private int tID;
+	private int tage;
+	
+	public String getsName() {
+		return tName;
+	}
+
+	public void settName(String tName) {
+		this.tName = tName;
+	}
+	
+	public String gettAddress() {
+		return tAddress;
+	}
+
+	public void settAddress(String tAddress) {
+		this.tAddress = tAddress;
+	}
+	
+	public String gettFatherName() {
+		return tFatherName;
+	}
+
+	public void settFatherName(String tFatherName) {
+		this.tFatherName = tFatherName;
+	}
+	
+	public int gettID() {
+		return tID;
+	}
+
+	public void settRollNo(int tID) {
+		this.tID = tID;
+	}
+	
+	public int gettage() {
+		return tage;
+	}
+
+	public void settage(int tage) {
+		this.tage = tage;
+	}
+	
+	public String toString() {
+		return "Student [Name=" + tName + ", Address=" + tAddress + ", fatherName=" + tFatherName + ",  ID =" +tID + ", age=" + tage + "]";
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Collection;
+import java.util.HashMap;
+
+public class MapIterator5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,String> m = new HashMap<String,String>();
+		m.put("0", "k");
+		m.put("1", "h");
+		m.put("2", "u");
+		m.put("3", "s");
+		m.put("4", "h");
+		m.put("5", "b");
+		m.put("6", "u");
+		Collection<String> c = m.values();
+		for(String s: c) {
+			System.out.println(s);
+		}
+	}
+
+}

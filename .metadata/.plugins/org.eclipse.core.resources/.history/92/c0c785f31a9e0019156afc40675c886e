@@ -1,0 +1,19 @@
+package com.basic;
+ 	
+public class conditionIf {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a =  30;
+		int b = 15;
+		
+		if(a<b) {
+			System.out.println("a is small value");
+		}
+		else {
+			System.out.printin("b is small value");
+		}
+	}
+
+}

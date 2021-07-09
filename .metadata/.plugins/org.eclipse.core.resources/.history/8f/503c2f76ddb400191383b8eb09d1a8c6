@@ -1,0 +1,23 @@
+package com.Hostel;
+
+public class Floor {
+	int floorName;
+	int floorRoom;
+	public int getFloorName() {
+		return floorName;
+	}
+	public void setFloorName(int floorName) {
+		this.floorName = floorName;
+	}
+	public int getFloorRoom() {
+		return floorRoom;
+	}
+	public void setFloorRoom(int floorRoom) {
+		this.floorRoom = floorRoom;
+	}
+	@Override
+	public String toString() {
+		return "Floor [floorName=" + floorName + ", floorRoom=" + floorRoom + "]";
+	}
+
+}

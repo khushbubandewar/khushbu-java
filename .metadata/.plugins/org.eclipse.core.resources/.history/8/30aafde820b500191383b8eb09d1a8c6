@@ -1,0 +1,25 @@
+package com.hostel.main;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hostel.data.HostelData;
+import com.hostel.model.Block;
+import com.hostel.model.Building;
+import com.hostel.model.Floor;
+import com.hostel.model.Room;
+import com.hostel.model.Student;
+
+public class HostelApplication {
+	public static void main(String[] args) {
+		Map<String,List<Block>> blockData = new HashMap<String,List<Block>>();
+		Map<String,List<Building>> buildingData = new HashMap<String,List<Building>>();
+		Map<String,List<Floor>> floorData = new HashMap<String,List<Floor>>();
+		Map<String,List<Room>> roomData = new HashMap<String,List<Room>>();
+		Map<String,List<Student>> studentData = new HashMap<String,List<Student>>();
+		
+		Map<String, List<Block>> hostelData = HostelData.hostelData;
+		System.out.println(hostelData);
+	}
+}
